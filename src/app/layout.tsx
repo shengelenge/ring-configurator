@@ -1,12 +1,10 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { openSans } from "@/lib/fonts";
 import "./globals.css";
 import Footer from "@/components/footer/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
-
 export const metadata: Metadata = {
-  title: "Wielocha Ring Confifurator",
+  title: "Wielocha Ring Configurator",
   description: "Create your own ring with Wielocha",
 };
 
@@ -17,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pl">
-      <body className={inter.className}>
+      <body className={openSans.className}>
         {children}
         <Footer />
       </body>
