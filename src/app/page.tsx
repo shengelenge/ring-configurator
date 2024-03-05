@@ -8,15 +8,18 @@ import { cameraPos } from "@/lib/constants";
 
 export default function Home() {
   return (
-    <main className={"flex min-h-screen items-center justify-center"}>
-      <Canvas
-        camera={{ position: cameraPos }}
-        className="absolute inset-0 left-0 w-16"
-      >
-        <Experience />
-      </Canvas>
-      <ConfiguratorNav />
-      <Configurator />
+    <main className={"flex-grow flex items-center justify-center h-full"}>
+      <section className="w-1/2 h-full">
+        <Canvas camera={{ position: cameraPos }}>
+          <Experience />
+        </Canvas>
+      </section>
+      <section className="w-1/6 h-full">
+        <ConfiguratorNav />
+      </section>
+      <section className=" w-1/3 h-full">
+        <Configurator />
+      </section>
     </main>
   );
 }
