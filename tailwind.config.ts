@@ -19,6 +19,46 @@ const config: Config = {
       grey: "#2c3238",
       "light-grey": "#5B5B66",
     },
+    fontSize: {
+      "headline-1": [
+        "32px",
+        {
+          fontWeight: "400",
+          lineHeight: "1.4",
+          letterSpacing: "0.09px",
+        },
+      ],
+      "headline-2": [
+        "18px",
+        {
+          fontWeight: "400",
+          lineHeight: "1.4",
+        },
+      ],
+      product: [
+        "16px",
+        {
+          lineHeight: "1.6",
+          letterSpacing: "0.2px",
+        },
+      ],
+      "main-price": [
+        "23px",
+        {
+          fontWeight: "600",
+          lineHeight: "1.4",
+          letterSpacing: "1px",
+        },
+      ],
+      price: [
+        "14px",
+        {
+          fontWeight: "400",
+          lineHeight: "22px",
+          letterSpacing: "1px",
+        },
+      ],
+    },
   },
   plugins: [],
 };
